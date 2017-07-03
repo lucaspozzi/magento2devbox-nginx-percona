@@ -1,0 +1,9 @@
+#!/usr/local/bin/php
+<?php
+$outFolder = '/home';
+$input = file_get_contents('php://stdin');
+$timeCreated = explode(" ",microtime());
+$filename = tempnam($outFolder,$timeCreated[1].'_'.$timeCreated[0].'_');
+file_put_contents($filename.'.eml', $input);
+unlink($filename);
+chmod($filename.'.eml', 0777);
