@@ -1,5 +1,5 @@
 nginx:
-  image: lucaspozzi/magento2:version1
+  image: lucaspozzi/magento2:latest
   ports:
     - "80:80"
     - "443:443"
