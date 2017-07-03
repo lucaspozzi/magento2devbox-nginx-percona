@@ -24,7 +24,7 @@ php:
     - .:/var/www/html
     - ./docker/config/php/php.ini:/usr/local/etc/php/conf.d/php.ini
     - ./docker/config/mail/sendmail:/usr/local/bin/sendmail
-    - ./docker/logs/mail:/home
+    - ./docker/logs/mail:/mail/log
 mysql:
   image: percona:5.6.34
   ports:

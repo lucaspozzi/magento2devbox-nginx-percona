@@ -1,6 +1,6 @@
 #!/usr/local/bin/php
 <?php
-$outFolder = '/home';
+$outFolder = '/mail/log';
 $input = file_get_contents('php://stdin');
 $timeCreated = explode(" ",microtime());
 $filename = tempnam($outFolder,$timeCreated[1].'_'.$timeCreated[0].'_');
